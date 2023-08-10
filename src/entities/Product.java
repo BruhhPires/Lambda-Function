@@ -37,6 +37,10 @@ public class Product {
 	public static String staticUpperCaseName(Product p) { // STATIC PRECISA INCLUIR O PRODUTO NO ARGUMENTO
 		return p.getName().toUpperCase();
 	}
+	
+	public  String nonStaticUpperCaseName() { // NÃO PRECISA INCLUIR O PRODUTO NO ARGUMENTO
+		return getName().toUpperCase();
+	}
 
 	@Override
 	public String toString() {
