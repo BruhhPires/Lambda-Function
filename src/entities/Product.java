@@ -33,6 +33,10 @@ public class Product {
 	public void nonStaticPriceUpdate() {
 		price = price * 1.1;
 	}
+	
+	public static String staticUpperCaseName(Product p) { // STATIC PRECISA INCLUIR O PRODUTO NO ARGUMENTO
+		return p.getName().toUpperCase();
+	}
 
 	@Override
 	public String toString() {
